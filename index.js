@@ -1,7 +1,7 @@
 var gen = require('random-seed');
 var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-function predicatableHash( seed, length ){
+function randomslug( seed, length ){
 	length = length || 10;
     var text = "";
     var rand = gen.create(seed);
@@ -12,4 +12,4 @@ function predicatableHash( seed, length ){
     return text;
 }
 
-module.exports = predicatableHash;
+module.exports = randomslug;
